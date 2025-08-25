@@ -1,10 +1,10 @@
 import axios from "axios";
 
-const BASE_URL = import.meta.env.BASE_URL;
+const BASE_URL = import.meta.env.VITE_BASE_URL;
 
 const params = {
-    key: import.meta.env.PARAMS_KEY,
-    cx: import.meta.env.PARAMS_CX,
+    key: import.meta.env.VITE_PARAMS_KEY,
+    cx: import.meta.env.VITE_PARAMS_CX,
 };
 
 export const fetchDataFromApi = async (payload) => {
