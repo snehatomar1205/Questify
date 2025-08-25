@@ -1,10 +1,10 @@
 import axios from "axios";
 
-const BASE_URL = "https://www.googleapis.com/customsearch/v1";
+const BASE_URL = import.meta.env.BASE_URL;
 
 const params = {
-    key: "AIzaSyAGx8CAqY-owfHzRXMiF8pGE1P-9QaALwU",
-    cx: "b2937246bf818412e",
+    key: import.meta.env.PARAMS_KEY,
+    cx: import.meta.env.PARAMS_CX,
 };
 
 export const fetchDataFromApi = async (payload) => {
